@@ -3,7 +3,7 @@ def merge(nums1, m, nums2, n):
     nums1[m:] = nums2
     
     # Сортуємо nums1
-    nums1.sort(reverse=True)
+    nums1.sort(reverse=False)
 
 # Приклади використання:
 input_nums1_1 = [1, 2, 3, 0, 0, 0]
@@ -26,4 +26,3 @@ input_nums2_3 = [1]
 input_n_3 = 1
 merge(input_nums1_3, input_m_3, input_nums2_3, input_n_3)
 print("Output 3:", input_nums1_3)
-
