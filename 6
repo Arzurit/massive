@@ -1,12 +1,10 @@
 def remove_duplicates(nums):
-    # Перевіряємо чи масив порожній
+  
     if not nums:
         return 0
 
-    # Встановлюємо вказівник для вставки унікальних елементів
     insert_index = 1
 
-    # Проходимо по масиву, ігноруючи дублікати
     for i in range(1, len(nums)):
         if nums[i] != nums[i - 1]:
             nums[insert_index] = nums[i]
